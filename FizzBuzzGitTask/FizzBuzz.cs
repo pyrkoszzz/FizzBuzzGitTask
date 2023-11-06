@@ -8,7 +8,7 @@
         private static bool IsDivisibleBySeven(int number) => number % 7 == 0;
         private static bool IsDivisibleByEleven(int number) => number % 11 == 0;
 
-        private static string CheckFizzBuzz(int number)
+        protected static string CheckFizzBuzz(int number)
         {
             string result = string.Empty;
 
@@ -25,10 +25,21 @@
 
             return result;
         }
+    }
 
+    public class FizzBuzzPrinter : FizzBuzz
+    {
         public static void PrintFizzBuzz(int number)
         {
             Console.WriteLine(CheckFizzBuzz(number));
+        }
+        
+        public static void PrintFizzBuzzRange(int start, int stop)
+        {
+            for(int i = start; i <= stop; i++)
+            {
+                PrintFizzBuzz(i);
+            }
         }
     }
 }
