@@ -2,6 +2,7 @@
 {
     static void Main(string[] args)
     {
-        FizzBuzz.FizzBuzz.PrintFizzBuzz(1001);
+        FizzBuzz.FizzBuzzPrinter.PrintFizzBuzz(21);
+        FizzBuzz.FizzBuzzPrinter.PrintFizzBuzzRange(1,100);
     }
 }
