@@ -29,7 +29,8 @@
         protected static bool IsFizzBuzzWhizzBang(int number)
         {
             return CheckFizzBuzz(number) == (Constants.Fizz.ToString() + Constants.Buzz.ToString() + Constants.Whizz.ToString() + Constants.Bang.ToString());
-    }
+
+        }
     }
 
     public class FizzBuzzPrinter : FizzBuzz
@@ -46,7 +47,7 @@
                 PrintFizzBuzz(i);
             }
         }
-
+        
         public static void PrintUntilFizzBuzzWhizzBang()
         {
             int number = 0;
