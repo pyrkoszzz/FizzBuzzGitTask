@@ -46,7 +46,6 @@
                 PrintFizzBuzz(i);
             }
         }
-
         public static void PrintUntilFizzBuzzWhizzBang()
         {
             int number = 0;
